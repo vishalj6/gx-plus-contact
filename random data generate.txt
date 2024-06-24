@@ -1,0 +1,160 @@
+const countryData = {
+    "India": {
+        "Andaman and Nicobar Islands": ["Port Blair", "Diglipur", "Mayabunder"],
+        "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Guntur"],
+        "Arunachal Pradesh": ["Itanagar", "Tawang", "Naharlagun"],
+        "Assam": ["Guwahati", "Dibrugarh", "Silchar"],
+        "Bihar": ["Patna", "Gaya", "Bhagalpur"],
+        "Chandigarh": ["Chandigarh"],
+        "Chhattisgarh": ["Raipur", "Bhilai", "Bilaspur"],
+        "Dadra and Nagar Haveli and Daman and Diu": ["Daman", "Silvassa", "Diu"],
+        "Delhi": ["New Delhi", "North Delhi", "South Delhi"],
+        "Goa": ["Panaji", "Margao", "Vasco da Gama"],
+        "Gujarat": ["Ahmedabad", "Surat", "Vadodara"],
+        "Haryana": ["Faridabad", "Gurgaon", "Panipat"],
+        "Himachal Pradesh": ["Shimla", "Mandi", "Solan"],
+        "Jammu and Kashmir": ["Srinagar", "Jammu", "Anantnag"],
+        "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad"],
+        "Karnataka": ["Bangalore", "Mysore", "Hubli"],
+        "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode"],
+        "Ladakh": ["Leh", "Kargil"],
+        "Lakshadweep": ["Kavaratti", "Minicoy", "Andrott"],
+        "Madhya Pradesh": ["Bhopal", "Indore", "Jabalpur"],
+        "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+        "Manipur": ["Imphal", "Thoubal", "Bishnupur"],
+        "Meghalaya": ["Shillong", "Tura", "Jowai"],
+        "Mizoram": ["Aizawl", "Lunglei", "Saiha"],
+        "Nagaland": ["Kohima", "Dimapur", "Mokokchung"],
+        "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela"],
+        "Puducherry": ["Puducherry", "Karaikal", "Mahe"],
+        "Punjab": ["Ludhiana", "Amritsar", "Jalandhar"],
+        "Rajasthan": ["Jaipur", "Jodhpur", "Udaipur"],
+        "Sikkim": ["Gangtok", "Namchi", "Gyalshing"],
+        "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai"],
+        "Telangana": ["Hyderabad", "Warangal", "Nizamabad"],
+        "Tripura": ["Agartala", "Dharmanagar", "Udaipur"],
+        "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi"],
+        "Uttarakhand": ["Dehradun", "Haridwar", "Rishikesh"],
+        "West Bengal": ["Kolkata", "Asansol", "Siliguri"]
+    },
+    "USA": {
+        "California": ["Los Angeles", "San Francisco", "San Diego"],
+        "New York": ["New York City", "Buffalo", "Rochester"],
+        "Texas": ["Houston", "Dallas", "Austin"]
+    },
+    "UK": {
+        "England": ["London", "Manchester", "Birmingham"],
+        "Scotland": ["Glasgow", "Edinburgh", "Aberdeen"],
+        "Wales": ["Cardiff", "Swansea", "Newport"]
+    },
+    "Australia": {
+        "New South Wales": ["Sydney", "Newcastle", "Wollongong"],
+        "Victoria": ["Melbourne", "Geelong", "Ballarat"],
+        "Queensland": ["Brisbane", "Gold Coast", "Sunshine Coast"]
+    },
+    "Canada": {
+        "Ontario": ["Toronto", "Ottawa", "Hamilton"],
+        "Quebec": ["Montreal", "Quebec City", "Laval"],
+        "British Columbia": ["Vancouver", "Victoria", "Kelowna"]
+    },
+    "France": {
+        "Île-de-France": ["Paris", "Versailles", "Boulogne-Billancourt"],
+        "Provence-Alpes-Côte d'Azur": ["Marseille", "Nice", "Cannes"],
+        "Auvergne-Rhône-Alpes": ["Lyon", "Grenoble", "Saint-Étienne"]
+    },
+    "Germany": {
+        "North Rhine-Westphalia": ["Cologne", "Düsseldorf", "Dortmund"],
+        "Bavaria": ["Munich", "Nuremberg", "Augsburg"],
+        "Baden-Württemberg": ["Stuttgart", "Karlsruhe", "Freiburg"]
+    },
+    "China": {
+        "Beijing": ["Beijing", "Shijiazhuang", "Baoding"],
+        "Shanghai": ["Shanghai", "Suzhou", "Hangzhou"],
+        "Guangdong": ["Guangzhou", "Shenzhen", "Dongguan"]
+    },
+    "Brazil": {
+        "São Paulo": ["São Paulo", "Campinas", "Santo André"],
+        "Rio de Janeiro": ["Rio de Janeiro", "Niterói", "Duque de Caxias"],
+        "Minas Gerais": ["Belo Horizonte", "Uberlândia", "Contagem"]
+    },
+    "Russia": {
+        "Moscow": ["Moscow", "Saint Petersburg", "Novosibirsk"],
+        "Tatarstan": ["Kazan", "Naberezhnye Chelny", "Nizhnekamsk"],
+        "Sverdlovsk": ["Yekaterinburg", "Nizhny Tagil", "Kamensk-Uralsky"]
+    },
+    "Japan": {
+        "Tokyo": ["Tokyo", "Yokohama", "Osaka"],
+        "Kanagawa": ["Yokohama", "Kawasaki", "Sagamihara"],
+        "Osaka": ["Osaka", "Sakai", "Higashiōsaka"]
+    },
+    "South Korea": {
+        "Seoul": ["Seoul", "Incheon", "Suwon"],
+        "Busan": ["Busan", "Ulsan", "Gimhae"],
+        "Gyeonggi": ["Goyang", "Seongnam", "Yongin"]
+    },
+    "Mexico": {
+        "Mexico City": ["Mexico City", "Ecatepec", "Guadalajara"],
+        "Jalisco": ["Guadalajara", "Zapopan", "Tlaquepaque"],
+        "Nuevo León": ["Monterrey", "Guadalupe", "San Nicolás de los Garza"]
+    },
+    "Italy": {
+        "Lazio": ["Rome", "Latina", "Fiumicino"],
+        "Lombardy": ["Milan", "Brescia", "Monza"],
+        "Campania": ["Naples", "Salerno", "Torre del Greco"]
+    },
+    "Spain": {
+        "Madrid": ["Madrid", "Móstoles", "Alcalá de Henares"],
+        "Catalonia": ["Barcelona", "L'Hospitalet de Llobregat", "Badalona"],
+        "Andalusia": ["Seville", "Málaga", "Córdoba"]
+    }
+};
+
+let arr = [];
+
+// Function to generate a random phone number
+function generateRandomPhone() {
+    let phone = '';
+    for (let i = 0; i < 10; i++) {
+        phone += Math.floor(Math.random() * 10);
+    }
+    return phone;
+}
+
+// Function to generate a random email address
+function generateRandomEmail() {
+    const domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'example.com'];
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
+    let email = '';
+    for (let i = 0; i < 10; i++) {
+        email += letters.charAt(Math.floor(Math.random() * letters.length));
+    }
+    email += '@' + domains[Math.floor(Math.random() * domains.length)];
+    return email;
+}
+
+// Function to select a random value from an array
+function getRandomValue(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+// Generate 25 objects
+for (let i = 0; i < 25; i++) {
+    const country = getRandomValue(Object.keys(countryData));
+    const state = getRandomValue(Object.keys(countryData[country]));
+    const city = getRandomValue(countryData[country][state]);
+
+    let obj = {
+        firstName: 'John' + i,
+        lastName: 'Doe' + i,
+        country: country,
+        phoneno: generateRandomPhone(),
+        state: state,
+        city: city,
+        email: generateRandomEmail(),
+        address: "Address" + i
+    };
+    arr.push(obj);
+}
+
+console.log(arr);
+localStorage.setItem('contact-us-data',JSON.stringify(arr));

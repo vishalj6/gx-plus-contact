@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    /* scroll-behavior: smooth; */
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-size: 1rem;
+    /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    width: 10px;
+    border-radius: 0px;
+    background-color: #2424248a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.315);
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(71, 159, 211, 0.842);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* for firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(./Assets/workimg4copy.jfif) center no-repeat;
+    background-size: cover;
+}
+
+.main-table-container {
+    backdrop-filter: grayscale(70%) blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00131fe5;
+    width: 100%;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.table-custom {
+    /* text-align: center; */
+    vertical-align: middle;
+    min-width: 90%;
+}
+
+.edit-btn,
+.delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.edit-btn {
+    background-color: rgb(7, 141, 185);
+}
+
+.delete-btn {
+    background-color: rgb(161, 9, 40);
+}

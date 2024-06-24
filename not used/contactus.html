@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <style>
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px rgb(213, 205, 205);
+            font-size: 14px;
+            font-weight: 400;
+            font-family: cursive;
+        }
+
+        .btn {
+            text-align: center;
+            /* height: 40px; */
+            /* width: 150px; */
+            width: 100%;
+            padding: 10px 20px;
+            color: white;
+            background-color: #415fcd;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            border: 3px solid #8ba2f5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .parent {
+            padding: 10px;
+            box-shadow: 5px 5px 5px 5px rgb(213, 205, 205);
+        }
+
+        .dot {
+            color: #415fcd;
+            font-size: 3rem;
+        }
+
+        .fashion {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .nav-item>a {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .margin_nav {
+            margin-left: 50px;
+        }
+
+        .child_1 {
+            height: auto;
+            max-height: 610px;
+            overflow: hidden;
+        }
+
+        .main-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact_form" id="contact_form">
+        <div class="main">
+            <div class=" parent container">
+                <div class="row parent_1">
+                    <div class="col-md-6 col-sm-12 child_1">
+                        <img src="http://10.10.2.177:5500/website_page/pic/img_12.png" alt="contact"
+                            class="img-fluid main-img">
+                    </div>
+                    <div class="col-md-6 col-sm-12 parent_2">
+                        <form id="contact">
+                            <h2>Contact US</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="fname">First Name:<span
+                                            style="color: rgb(249, 113, 113); font-size: 10px;"> *</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter your First Name"
+                                        name="fname" id="fname" required style="font-size: 12px;">
+                                    <div id="error_fname" style="color: red; visibility: hidden;">*Please enter valid
+                                        First Name</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lname">Last Name:<span
+                                            style="color: rgb(249, 113, 113); font-size: 10px;"> *</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter your Last Name"
+                                        name="lname" id="lname" style="font-size: 12px;" required>
+                                    <div id="error_lname" style="color: red; visibility: hidden;">*Please enter valid
+                                        Last Name</div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <label for="email">Email:<span style="color: rgb(249, 113, 113); font-size: 10px;">
+                                            *</span></label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your Email" style="font-size: 12px;" required>
+                                    <div id="error_email" style="color: red; visibility: hidden;">*Please enter valid
+                                        Email Address</div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <label for="address">Address:</label>
+                                    <textarea name="address" id="address" cols="30" rows="5" class="form-control"
+                                        placeholder="Enter your Address " style="font-size: 12px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <label for="cname">City:</label>
+                                    <select name="cname" id="cname">
+                                        <option value="ahmedabad">Ahmedabad</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="sname">State:</label>
+                                    <select name="sname" id="sname">
+                                        <option value="gujarat">Gujarat</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="coname">Country:</label>
+                                    <select name="coname" id="coname">
+                                        <option value="india">India</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <label for="ph_no">Phone Number:<span
+                                            style="color: rgb(249, 113, 113); font-size: 10px;"> *</span></label>
+                                    <input type="text" class="form-control" id="ph_no" name="ph_no"
+                                        style="font-size: 12px;" required>
+                                    <div id="error_ph_no" style="color: red; visibility: hidden;">*Please enter valid
+                                        Phone Number</div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4"><button type="submit" class="btn  save"
+                                        onclick="form_data(event)">Submit</button></div>
+                                <div class="col-md-4"><button type="reset" class="btn  cancel">Cancel</button></div>
+                                <div class="col-md-4"><button class="btn  view"
+                                        onclick="window.location.href='view1.html'">View</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+            var editedIndex = JSON.parse(localStorage.getItem("editIndex"));
+            var editedFormData = JSON.parse(localStorage.getItem("NewFormData"));
+            if (editedFormData && editedIndex !== null) {
+                $("#fname").val(editedFormData.fname || " ");
+                $("#lname").val(editedFormData.lname || " ");
+                $("#email").val(editedFormData.email || " ");
+                $("#ph_no").val(editedFormData.ph_no || " ");
+                $("#address").val(editedFormData.address || " ");
+                $("#cname").val(editedFormData.cname || " ");
+                $("#sname").val(editedFormData.sname || " ");
+                $("#coname").val(editedFormData.coname || " ");
+                localStorage.removeItem("NewFormData");
+            }
+        });
+
+
+        function form_data(event) {
+
+            const phone_no = /^\d{10}$/;
+            const email_id = /^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}$/;
+            const name = /^[a-zA-Z'-]+$/;
+            let isvalid = true;
+
+            event.preventDefault();
+
+            let fname = $('#fname');
+            let lname = $('#lname');
+            let email = $('#email');
+            let address = $('#address').val();
+            let cname = $('#cname').val();
+            let sname = $('#sname').val();
+            let coname = $('#coname').val();
+            let ph_no = $('#ph_no');
+
+            if (!phone_no.test(ph_no.val())) {
+                $('#error_ph_no').css('visibility', 'visible');
+                ph_no.css('border', '2px solid red');
+                isvalid = false;
+            } else {
+                $('#error_ph_no').css('visibility', 'hidden');
+                ph_no.css('border', '');
+            }
+
+            if (!email_id.test(email.val())) {
+                $('#error_email').css('visibility', 'visible');
+                email.css('border', '2px solid red');
+                isvalid = false;
+            } else {
+                $('#error_email').css('visibility', 'hidden');
+                email.css('border', '');
+            }
+
+            if (!name.test(fname.val())) {
+                $('#error_fname').css('visibility', 'visible');
+                fname.css('border', '2px solid red');
+                isvalid = false;
+            } else {
+                $('#error_fname').css('visibility', 'hidden');
+                fname.css('border', '');
+            }
+
+            if (!name.test(lname.val())) {
+                $('#error_lname').css('visibility', 'visible');
+                lname.css('border', '2px solid red');
+                isvalid = false;
+            } else {
+                $('#error_lname').css('visibility', 'hidden');
+                lname.css('border', '');
+            }
+
+            if (isvalid) {
+                var data = {
+                    fname: fname.val(),
+                    lname: lname.val(),
+                    email: email.val(),
+                    address: address,
+                    cname: cname,
+                    sname: sname,
+                    coname: coname,
+                    ph_no: ph_no.val(),
+                };
+
+                if (isvalid) {
+                    var data = {
+                        fname: fname.val(),
+                        lname: lname.val(),
+                        email: email.val(),
+                        address: address,
+                        cname: cname,
+                        sname: sname,
+                        coname: coname,
+                        ph_no: ph_no.val(),
+                    };
+
+                    // var Data = [];
+                    // Data = JSON.parse(localStorage.getItem("data")) || [];
+                    // Data.push(data);
+                    // localStorage.setItem("data", JSON.stringify(Data));
+                    // alert("Form submitted successfully");
+                    // $('#contact')[0].reset();
+
+                    var editedIndex = JSON.parse(localStorage.getItem("editIndex"));
+                    if (editedIndex !== null) {
+                        var existingFormData = JSON.parse(localStorage.getItem("data")) || [];
+                        existingFormData[editedIndex] = data;
+                        localStorage.setItem("data", JSON.stringify(existingFormData));
+                        alert("Form updated successfully!");
+                        $("#contact")[0].reset();
+                        localStorage.removeItem("editIndex");
+                    } else {
+                        var Data = JSON.parse(localStorage.getItem("data")) || [];
+                        Data.push(data);
+                        localStorage.setItem("data", JSON.stringify(Data));
+                        alert("Form submitted successfully!");
+                        $("#contact")[0].reset();
+                    }
+
+                };
+
+            }
+        }
+
+        $(document).ready(function () {
+
+        });
+
+
+    </script>
+
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GX Plus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- google fonts cdn -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./demowebpage.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/Gx-logo.png">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/3f526b446a.js" crossorigin="anonymous"></script>
+    <!-- AJAX cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./contact.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-light fixed-top" id="main-navbar">
+        <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="navbarOffcanvasLg">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GX Plus</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-body-custom">
+                <div style="position: relative;">
+                    <a class="navbar-brand navbar-brand-custom" href="#">
+                        <div class="navbar-brand-div">
+
+                            <span>GX
+                                <svg class="navbar-trianlesvg" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 1280.000000 1130.000000" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#6c97fa ;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#083aaf ;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <g transform="translate(0.000000,1130.000000) scale(0.100000,-0.100000)">
+                                        <path class="navbarsvg-color"
+                                            d="M6266 11289 c-200 -27 -402 -141 -536 -301 -38 -46 -432 -718 -1284 -2194 -3554 -6153 -4323 -7485 -4358 -7554 -61 -121 -81 -211 -81 -375 -1 -115 3 -154 21 -220 91 -327 350 -567 681 -629 75 -14 614 -16 5691 -16 5077 0 5616 2 5691 16 331 62 590 302 681 629 18 66 22 105 21 220 0 164 -20 254 -81 375 -21 41 -756 1317 -1633 2835 -877 1518 -2126 3680 -2775 4804 -817 1416 -1196 2063 -1234 2109 -112 134 -277 239 -445 283 -93 24 -256 32 -359 18z" />
+                                    </g>
+                                </svg>
+                            </span>
+
+                            <span class="navbarlogo-blue">Plus</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+
+                    <ul data-bs-dismiss="offcanvas"
+                        class="navbar-nav align-items-center justify-content-center flex-grow-1 gap-2 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link-custom-text active" href="#hero-section-section">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link-custom-text" href="#about-our-app-section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link-custom-text"
+                                href="#awesome-app-features-section">Features</a>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link-custom-text" href="#app-creators-section">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link-custom-text"
+                                href="#frequently-asked-questions-section">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link navbar-link-custom-text" href="contact.html">Contact</a> -->
+                            <a class="nav-link navbar-link-custom-text" href="#get-in-touch-section">Contact</a>
+                        </li>
+
+                        <button class="download-btn">Download</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true" tabindex="0"
+        class="main-container container-fluid p-0">
+        <section class="hero-section-section" id="hero-section-section">
+            <div class="hero-section">
+                <div class="left-hero-image">
+                    <img src="./Assets/image-removebg-preview.png" alt="hero-section-image">
+                </div>
+                <div class="right-hero-typography">
+                    <p class="fw-semibold text-secondary ">
+                        Exclusive Design
+                    </p>
+
+                    <h1>
+                        The Perfect Mobile <br> Application For You
+                    </h1>
+
+                    <p>There are many variations of lorem ipsum available, but the majority have suffered alterationin
+                        some
+                        form, by injected randomised words which don't even look slightly believable.</p>
+
+                    <div class="download-playstore-appstore">
+                        <div class="download-from-playstore">
+                            <img src="./Assets/download from play store.png" alt="download from Play store">
+                        </div>
+                        <div class="download-from-appstore">
+                            <img src="./Assets/download from appstore.png" alt="download from app store">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-our-app-section" id="about-our-app-section">
+            <div class="about-our-app-container">
+                <div class="about-our-app-typo">
+                    <h1 class="fw-bold text-dark">About Our App</h1>
+                    <p>There are many variations of lorem ipsum available, but in to the majority believable.</p>
+                    <ul>
+                        <li>There are many variations of lorem ipsum available</li>
+                        <li>There are many variations of lorem ipsum available</li>
+                        <li>There are many variations of lorem ipsum available</li>
+                        <li>There are many variations of lorem ipsum available</li>
+                    </ul>
+                    <div class="about-our-app-btns">
+                        <button class="darkblue-btn">
+                            Learn More
+                        </button>
+                        <button class="darkblueborder-only-btn">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+                <div class="about-our-app-mockup">
+                    <div class="about-our-app-mockup-img-container">
+                        <img class="iphone-mockup1" src="./Assets/IphoneMockup.png" alt="">
+                        <img class="iphone-mockup2" src="./Assets/IphoneMockup.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="awesome-app-features-bg">
+            <section class="awesome-app-features-section" id="awesome-app-features-section">
+                <div class="awesome-app-features">
+                    <h1 class="fw-bold text-center">Awesome App Features</h1>
+                    <p class="awesome-app-features-main-text">Lorem ipsum is a pseudo-Latin text used in web design,
+                        typography,
+                        <br> layout, and printing in place of
+                        English to emphasise design
+                    </p>
+
+                    <div class="awesome-app-features-mockup">
+                        <div class="awesome-features-cards">
+                            <div class="awesome-features-card">
+                                <span class="material-symbols-outlined">
+                                    add_notes
+                                </span>
+                                <p class="awesome-card-title">Note List</p>
+                                <p class="awesome-card-text">Lorem ipsum is a pseLatin text used in detypography,
+                                    layout, and printing.</p>
+                            </div>
+                            <div class="awesome-features-card">
+                                <span class="material-symbols-outlined">
+                                    quick_reference_all
+                                </span>
+                                <p class="awesome-card-title">Search & Explore</p>
+                                <p class="awesome-card-text">Lorem ipsum is a pseLatin text used in detypography,
+                                    layout, and printing.</p>
+                            </div>
+                        </div>
+                        <div class="awesome-features-cards">
+                            <div class="awesome-features-card">
+                                <span class="material-symbols-outlined">
+                                    account_balance_wallet
+                                </span>
+                                <p class="awesome-card-title">Save Data</p>
+                                <p class="awesome-card-text">Lorem ipsum is a pseLatin text used in detypography,
+                                    layout, and printing.</p>
+                            </div>
+                            <div class="awesome-features-card">
+                                <span class="material-symbols-outlined">
+                                    inbox_customize
+                                </span>
+                                <p class="awesome-card-title">App Settings</p>
+                                <p class="awesome-card-text">Lorem ipsum is a pseLatin text used in detypography,
+                                    layout, and printing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="watch-demo-video-section">
+            <div class="watch-demo-video">
+                <h1 class="fw-bold text-center my-3">Watch Demo Video</h1>
+                <div class="watch-demo-video-container">
+                    <img src="./Assets/watch video image.jpg" alt="Watch out demo video">
+                </div>
+            </div>
+        </section>
+
+        <div class="popular-blogs-section-bg">
+            <section class="popular-blogs-section" id="popular-blogs-section">
+                <div class="popular-blogs-container">
+                    <div class="popular-blogs">
+                        <div class="popular-head-text">
+                            <h1 class="fw-bold mb-3">Popular Blogs</h1>
+                            <p class="popular-blogs-title-caption">Lorem ipsum is used Latin text used in web design,
+                                typography,
+                                layout, and <br> printing in place of
+                                English to emphasize</p>
+                        </div>
+
+                        <div class="popular-blog-card-container">
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/work img1.avif" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        The UX Designer's Guide for Post- Launch Success
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/work img2.png" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        The UX Designer's Guide for Post- Launch Success
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/work img3.png" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        Must Follow Design Principles for a better User interface
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/work img4.jfif" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        Mobile App Blogs & Websites For Mobile App Industry
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/watch video image.jpg" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        These Are The Best UI Design Blogs
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                            <div class="popular-blog-card">
+                                <div class="popular-blog-card-img">
+                                    <img src="./Assets/work img6.avif" alt="">
+                                </div>
+                                <div class="popular-blog-card-text-conatiner">
+                                    <span class="admin">Admin</span>
+                                    <div class="date-like-view">
+                                        <span>Oct-28-2020</span>
+                                        <span>Like 500+</span>
+                                        <span>View 2875</span>
+                                    </div>
+                                    <p class="fw-bold">
+                                        Wireframe Shoots: Skotch Your User Interface to Life
+                                    </p>
+                                    <p class="popular-card-caption">
+                                        As a UX Designer your job is alwa from over. All the effort spent planning.
+                                        researching,
+                                        and
+                                        creating an app
+                                    </p>
+                                    <span class="read-more">Read more...</span>
+                                </div>
+                                <div class="popular-blog-card-hover-bg">
+                                    <h1 class="fw-bold">550+</h1>
+                                    <p>Collect design resorts!!</p>
+                                    <span class="hover-read-more">Read more...</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="see-all-btn-div">
+                            <button class="darkblue-btn">See All</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="customers-reviews-section-bg">
+            <section class="customers-reviews-section" id="customers-reviews-section">
+                <div class="customers-reviews-container">
+                    <div class="customers-reviews">
+                        <h1 class="fw-bold text-center">What Our Customers Are Saying?</h1>
+                        <p class="customers-reviews-head-caption text-center">Frankness applauded by supported ye
+                            household.
+                            Collected favourite now for for an rapturous repulsive
+                            consulted.</p>
+
+                        <div class="customers-reviews-cards">
+                            <div class="customers-reviews-card">
+                                <div class="customers-reviews-card-section1">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <span>
+                                        Great Support!!
+                                    </span>
+                                    <p>Perceived and knowledge certainly day sweetness why cordially. Ask quick six
+                                        seven
+                                        offer
+                                        see among Handsome met age material</p>
+                                </div>
+                                <div class="customers-reviews-card-section2">
+                                    <div class="customers-reviews-img-container">
+                                        <img src="./Assets/pexels-simon-robben-614810.jpg" alt="customer image">
+                                    </div>
+                                    <p class="name fw-bold">Shazid Imtiaz</p>
+                                    <p class="designation">CEO, Techno</p>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers-reviews-card">
+                                <div class="customers-reviews-card-section1">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <span>
+                                        Expert Work Experience!!
+                                    </span>
+                                    <p>Perceived and knowledge certainly day sweetness why cordially. Ask quick six
+                                        seven
+                                        offer
+                                        see among Handsome met age material</p>
+                                </div>
+                                <div class="customers-reviews-card-section2">
+                                    <div class="customers-reviews-img-container">
+                                        <img src="./Assets/pexels-simon-robben-614810.jpg" alt="customer image">
+                                    </div>
+                                    <p class="name fw-bold">Shazid Imtiaz</p>
+                                    <p class="designation">CEO, Techno</p>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers-reviews-card">
+                                <div class="customers-reviews-card-section1">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <span>
+                                        Good Job, Go Ahed!!
+                                    </span>
+                                    <p>Perceived and knowledge certainly day sweetness why cordially. Ask quick six
+                                        seven
+                                        offer
+                                        see among Handsome met age material</p>
+                                </div>
+                                <div class="customers-reviews-card-section2">
+                                    <div class="customers-reviews-img-container">
+                                        <img src="./Assets/pexels-simon-robben-614810.jpg" alt="customer image">
+                                    </div>
+                                    <p class="name fw-bold">Shazid Imtiaz</p>
+                                    <p class="designation">CEO, Techno</p>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customers-reviews-card">
+                                <div class="customers-reviews-card-section1">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                    <span>
+                                        Nice Work Best wishes for You!!
+                                    </span>
+                                    <p>Perceived and knowledge certainly day sweetness why cordially. Ask quick six
+                                        seven
+                                        offer
+                                        see among Handsome met age material</p>
+                                </div>
+                                <div class="customers-reviews-card-section2">
+                                    <div class="customers-reviews-img-container">
+                                        <img src="./Assets/pexels-simon-robben-614810.jpg" alt="customer image">
+                                    </div>
+                                    <p class="name fw-bold">Shazid Imtiaz</p>
+                                    <p class="designation">CEO, Techno</p>
+                                    <div class="star-icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="app-creators-section" id="app-creators-section">
+            <div class="app-creators-container">
+                <h1 class="fw-bold">Who has created this App</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                </p>
+                <div class="creator-images-container">
+                    <div class="creator-image-div">
+                        <div class="creator-image">
+                            <img src="./Assets/person portrait.avif" alt="creator image">
+                        </div>
+                        <div class="creator-image-hover">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="hover-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <img class="Facebook-img" src="./Assets/Facebook_Logo_2023.png" alt="Facebook">
+                            </a>
+                            <a href="https://youtube.com/" target="_blank">
+                                <img class="Youtube-img" src="./Assets/Youtube_logo.png" alt="Youtube">
+                            </a>
+                            <a href="https://x.com/" target="_blank">
+                                <img class="Twitter-img" src="./Assets/Twitter.png" alt="Twitter">
+                            </a>
+                            <a href="https://in.linkedin.com/" target="_blank">
+                                <img class="Linkedin-img" src="./Assets/LinkedIn_logo_initials.png" alt="Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="creator-image-div">
+                        <div class="creator-image">
+                            <img src="./Assets/person portrait2.avif" alt="creator image">
+                        </div>
+                        <div class="creator-image-hover">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="hover-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <img class="Facebook-img" src="./Assets/Facebook_Logo_2023.png" alt="Facebook">
+                            </a>
+                            <a href="https://youtube.com/" target="_blank">
+                                <img class="Youtube-img" src="./Assets/Youtube_logo.png" alt="Youtube">
+                            </a>
+                            <a href="https://x.com/" target="_blank">
+                                <img class="Twitter-img" src="./Assets/Twitter.png" alt="Twitter">
+                            </a>
+                            <a href="https://in.linkedin.com/" target="_blank">
+                                <img class="Linkedin-img" src="./Assets/LinkedIn_logo_initials.png" alt="Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="creator-image-div">
+                        <div class="creator-image">
+                            <img src="./Assets/person portrait3.avif" alt="creator image">
+                        </div>
+                        <div class="creator-image-hover">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="hover-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <img class="Facebook-img" src="./Assets/Facebook_Logo_2023.png" alt="Facebook">
+                            </a>
+                            <a href="https://youtube.com/" target="_blank">
+                                <img class="Youtube-img" src="./Assets/Youtube_logo.png" alt="Youtube">
+                            </a>
+                            <a href="https://x.com/" target="_blank">
+                                <img class="Twitter-img" src="./Assets/Twitter.png" alt="Twitter">
+                            </a>
+                            <a href="https://in.linkedin.com/" target="_blank">
+                                <img class="Linkedin-img" src="./Assets/LinkedIn_logo_initials.png" alt="Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="creator-image-div">
+                        <div class="creator-image">
+                            <img src="./Assets/person portrait4.avif" alt="creator image">
+                        </div>
+                        <div class="creator-image-hover">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="hover-icons">
+                            <a href="https://facebook.com/" target="_blank">
+                                <img class="Facebook-img" src="./Assets/Facebook_Logo_2023.png" alt="Facebook">
+                            </a>
+                            <a href="https://youtube.com/" target="_blank">
+                                <img class="Youtube-img" src="./Assets/Youtube_logo.png" alt="Youtube">
+                            </a>
+                            <a href="https://x.com/" target="_blank">
+                                <img class="Twitter-img" src="./Assets/Twitter.png" alt="Twitter">
+                            </a>
+                            <a href="https://in.linkedin.com/" target="_blank">
+                                <img class="Linkedin-img" src="./Assets/LinkedIn_logo_initials.png" alt="Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="get-in-touch-section" id="get-in-touch-section">
+            <div class="get-in-touch-bg-img-section" id="get-in-touch-bg-img-section">
+                <div class="get-in-touch-container">
+                    <h1 class="fw-bold">Contact US</h1>
+                    <div class="get-in-touch-form-details">
+                        <form class="row gx-3 gy-3 get-in-touch-form needs-validation" action="" id="contact-us-form"
+                            novalidate>
+
+                            <div class="col-sm-12 col-md-6">
+                                <label for="first-name" class="form-label">First Name <i
+                                        class="fa-solid fa-asterisk fa-2xs" style="color: #f40101;"></i></label>
+                                <input type="text" id="first-name" class="first-name form-control"
+                                    placeholder="Enter your First name" pattern="^[a-zA-Z]+[']*[a-zA-Z]+$" required />
+
+
+                                <div class="valid-feedback">valid First name</div>
+                                <div class="invalid-feedback">Enter a valid first name</div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <label for="last-name" class="form-label">Last Name <i
+                                        class="fa-solid fa-asterisk fa-2xs" style="color: #f40101;"></i></label>
+                                <input type="text" id="last-name" class="last-name form-control"
+                                    placeholder="Enter your Last name" pattern="^[a-zA-Z]+[']*[a-zA-Z]+$" required />
+                                <div class="valid-feedback">valid Last name</div>
+                                <div class="invalid-feedback">Enter a valid Last name</div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <label for="contact-form-country" class="form-label">Country <i
+                                        class="fa-solid fa-asterisk fa-2xs" style="color: #f40101;"></i></label>
+                                <select class="form-select" id="contact-form-country" autocomplete="off" required>
+                                    <option value="" disabled selected>Select a Country</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="France">France</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="China">China</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="South Korea">South Korea</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Spain">Spain</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a Country.</div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <label for="phone-no" class="form-label">Phone no <i class="fa-solid fa-asterisk fa-2xs"
+                                        style="color: #f40101;"></i></label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="country-code">+91</span>
+                                    <input type="text" minlength="10" maxlength="10" id="phone-no"
+                                        class="phone-no form-control" pattern="[6789][0-9]{9}" placeholder="9876543210"
+                                        required />
+                                    <div class="valid-feedback">Valid Phone no</div>
+                                    <div class="invalid-feedback">Enter a valid Phone no</div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <label for="contact-form-state" class="form-label">State <i
+                                        class="fa-solid fa-asterisk fa-2xs" style="color: #f40101;"></i></label>
+                                <select class="form-select" id="contact-form-state" autocomplete="off" required>
+                                    <option value="" disabled selected>Select an Option</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a State.</div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6">
+                                <label for="contact-form-city" class="form-label">City <i
+                                        class="fa-solid fa-asterisk fa-2xs" style="color: #f40101;"></i></label>
+                                <select class="form-select" id="contact-form-city" autocomplete="off" required>
+                                    <option value="" disabled selected>Select an Option</option>
+                                </select>
+                                <div class="invalid-feedback">Please select a City.</div>
+                            </div>
+
+                            <div class="col-sm-12 col-12">
+                                <label for="email" class="form-label">Email <i class="fa-solid fa-asterisk fa-2xs"
+                                        style="color: #f40101;"></i></label>
+                                <input type="email" id="email" class="email form-control"
+                                    placeholder="Enter a valid email address" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                                    required />
+                                <div class="valid-feedback">valid Email</div>
+                                <div class="invalid-feedback">invalid Email</div>
+                            </div>
+                            <div class="col-sm-12 col-12">
+                                <label for="writeaddress" class="form-label">Address</label>
+                                <textarea name="writeaddress" id="writeaddress" class="writeaddress form-control"
+                                    cols="20" rows="3" placeholder="Enter your Address (optional)" value=""></textarea>
+                            </div>
+                            <div class="col-sm-12 col-12">
+                                <div class="modal-btns">
+                                    <button class="send-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Send
+                                        Message</button>
+                                    <button class="reset-btn" type="reset"><i class="fa fa-refresh"
+                                            aria-hidden="true"></i>
+                                        Reset</button>
+                                    <a href="view_details.html">
+                                        <button class="view-btn" type="button">
+                                            <i class="fa-solid fa-eye"></i> View
+                                            Details
+                                        </button>
+                                    </a>
+                                    <a href="demowebpage.html">
+                                        <button class="close-btn" type="button">
+                                            <i class="fa fa-close" aria-hidden="true"></i>
+                                            Close
+                                        </button>
+                                    </a>
+                                </div>
+                                <p class="required-field-warning"><i class="fa-solid fa-asterisk fa-2xs"></i> indicates
+                                    a
+                                    required field</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="frequently-asked-questions-section" id="frequently-asked-questions-section">
+            <div class="frequently-asked-questions-container">
+                <div class="frequently-img-div">
+                    <!-- <img src="./Assets/Que BG.png" alt=""> -->
+                </div>
+                <div class="frequently-accordian-div">
+                    <h1 class="fw-bold">Frequently Asked Questions</h1>
+                    <p>Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                        <br> layout, and printing in place of
+                        English to emphasise design
+                    </p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Which support do you needed ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum ispseud Latin text used in web design, typography.
+                                    and printing in place of English to emphasise
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do I get access this app ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum ispseud Latin text used in web design, typography.
+                                    and printing in place of English to emphasise
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How can i change my password ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum ispseud Latin text used in web design, typography.
+                                    and printing in place of English to emphasise
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I get more help ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum ispseud Latin text used in web design, typography.
+                                    and printing in place of English to emphasise
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="subsribe-to-get-more-features">
+            <div class="subsribe-features-container">
+                <h1 class="fw-bold">Subsribe to get more features</h1>
+                <p>Its had resolving otherwise she contented therefore. Afford relied warmth out sir heartsfa-bord
+                    <br /> sister use garden. Men day warmth formed admire former simple
+                </p>
+                <div class="subsribe-div">
+                    <input type="email" name="email2" id="email2" class="email2" placeholder="Enter email address" />
+                    <button type="button" id="toastbtn">Subscribe</button>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="for-filter">
+            <div class="main-footer-container">
+                <div class="footer-section1">
+                    <div class="main-logo-img-container">
+                        <span>GX <svg class="footer-trianlesvg" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1280.000000 1130.000000" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#487fff ;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#083aaf ;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <g transform="translate(0.000000,1130.000000) scale(0.100000,-0.100000)">
+                                    <path
+                                        d="M6266 11289 c-200 -27 -402 -141 -536 -301 -38 -46 -432 -718 -1284 -2194 -3554 -6153 -4323 -7485 -4358 -7554 -61 -121 -81 -211 -81 -375 -1 -115 3 -154 21 -220 91 -327 350 -567 681 -629 75 -14 614 -16 5691 -16 5077 0 5616 2 5691 16 331 62 590 302 681 629 18 66 22 105 21 220 0 164 -20 254 -81 375 -21 41 -756 1317 -1633 2835 -877 1518 -2126 3680 -2775 4804 -817 1416 -1196 2063 -1234 2109 -112 134 -277 239 -445 283 -93 24 -256 32 -359 18z" />
+                                </g>
+                            </svg></span>
+                        <span class="darkblue">plus</span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda!
+                    </p>
+                    <div class="social-media-logo-container">
+                        <a href="https://facebook.com/" target="_blank">
+                            <img class="Facebook-img" src="./Assets/Facebook_Logo_2023.png" alt="Facebook">
+                        </a>
+                        <a href="https://youtube.com/" target="_blank">
+                            <img class="Youtube-img" src="./Assets/Youtube_logo.png" alt="Youtube">
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                            <img class="Twitter-img" src="./Assets/Twitter.png" alt="Twitter">
+                        </a>
+                        <a href="https://in.linkedin.com/" target="_blank">
+                            <img class="Linkedin-img" src="./Assets/LinkedIn_logo_initials.png" alt="Linkedin">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-section2">
+                    <h6 class="footer-title-text">Explore</h6>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Blog</li>
+                        <li>Testimonial</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section3">
+                    <h6 class="footer-title-text">Support</h6>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                        <li>Team</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+
+                </div>
+                <div class="footer-section4">
+                    <h6 class="footer-title-text">Download from</h6>
+                    <img src="./Assets/download from play andappstore12.png" alt="">
+
+                </div>
+
+            </div>
+            <p class="copyright">@ copyright 2020 by Technomobile.com</p>
+        </div>
+    </footer>
+
+
+
+    <div class="position-relative">
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast3" class="toast text-bg-dark-subtle" role="alert" aria-live="assertive" aria-atomic="true"
+                data-bs-delay="5000">
+                <div class="toast-header">
+                    <img src="./Assets/Gx-logo.png" width="35px" class="me-2" alt="GX Plus">
+                    <strong class="me-auto">Subscribed</strong>
+                    <small>1 sec ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Thank You for Subscribing...
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                data-bs-delay="3000">
+                <div class="toast-body toast-success">
+                    <i class="fa-solid fa-check fa-bounce" style="color: #fff; margin-right: 5px;"></i>
+                    Data saved Successfully...
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+            <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+                data-bs-delay="2000">
+                <div class="toast-body toast-failure">
+                    <i class="fa-solid fa-exclamation fa-bounce" style="color: #fff; margin-right: 5px;"></i>
+                    <span>
+                        Failed...
+                    </span>
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // const form = document.getElementById('contact-us-form');
+        // form.addEventListener("submit", function (e) {
+        //     e.preventDefault();
+        //     validateContactForm();
+
+        // });
+        // form.addEventListener("reset", function () {
+        //     document.getElementById("contact-form-state").innerHTML = "<option value='' disabled selected>Select a State</option>";
+        //     document.getElementById("contact-form-city").innerHTML = "<option value='' disabled selected>Select a City</option>";
+        // });
+
+        // // function selectCity() {
+        // //     let i; // only for loops
+        // //     const state_obj = { "Gujarat": ["Ahmedabad", "Gandhinagar", "Surat", "Baroda", "Rajkot"], "Maharashtra": ["Mumbai", "Nashik", "Pune"], "Madhya Pradesh": ["Bhopal", "Indore", "Gwalior", "Jabalpur", "Ujjain"] };
+        // //     const contactFormState = document.getElementById("contact-form-state");
+        // //     const contactFormCity = document.getElementById("contact-form-city");
+        // //     if (contactFormState.value != "") {
+        // //         if (Object.keys(state_obj).includes(contactFormState.value)) {
+        // //             // Gujarat.map(function (x) {
+        // //             //     contactFormCity.innerHTML += "<option value='" + x + "'>" + x + "</option>";
+        // //             // })
+        // //             contactFormCity.innerHTML = "";
+        // //             let selected_state = state_obj[contactFormState.value];
+        // //             for (i = 0; i < selected_state.length; i++) {
+        // //                 contactFormCity.innerHTML += "<option value='" + selected_state[i] + "'>" + selected_state[i] + "</option>";
+        // //             }
+        // //         }
+        // //         else {
+        // //             alert("Select a valid state");
+        // //             contactFormState.focus()
+        // //             return;
+        // //         }
+        // //     }
+        // // }
+
+        // var countryData = {
+        //     "India": {
+        //         "Gujarat": ["Ahmedabad", "Surat", "Vadodara"],
+        //         "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+        //         "Karnataka": ["Bangalore", "Mysore", "Hubli"]
+        //     },
+        //     "USA": {
+        //         "California": ["Los Angeles", "San Francisco", "San Diego"],
+        //         "New York": ["New York City", "Buffalo", "Rochester"],
+        //         "Texas": ["Houston", "Dallas", "Austin"]
+        //     },
+        //     "UK": {
+        //         "England": ["London", "Manchester", "Birmingham"],
+        //         "Scotland": ["Glasgow", "Edinburgh", "Aberdeen"],
+        //         "Wales": ["Cardiff", "Swansea", "Newport"]
+        //     },
+        //     "Australia": {
+        //         "New South Wales": ["Sydney", "Newcastle", "Wollongong"],
+        //         "Victoria": ["Melbourne", "Geelong", "Ballarat"],
+        //         "Queensland": ["Brisbane", "Gold Coast", "Sunshine Coast"]
+        //     },
+        //     // Adding more countries
+        //     "Canada": {
+        //         "Ontario": ["Toronto", "Ottawa", "Hamilton"],
+        //         "Quebec": ["Montreal", "Quebec City", "Laval"],
+        //         "British Columbia": ["Vancouver", "Victoria", "Kelowna"]
+        //     },
+        //     "France": {
+        //         "Île-de-France": ["Paris", "Versailles", "Boulogne-Billancourt"],
+        //         "Provence-Alpes-Côte d'Azur": ["Marseille", "Nice", "Cannes"],
+        //         "Auvergne-Rhône-Alpes": ["Lyon", "Grenoble", "Saint-Étienne"]
+        //     },
+        //     "Germany": {
+        //         "North Rhine-Westphalia": ["Cologne", "Düsseldorf", "Dortmund"],
+        //         "Bavaria": ["Munich", "Nuremberg", "Augsburg"],
+        //         "Baden-Württemberg": ["Stuttgart", "Karlsruhe", "Freiburg"]
+        //     }
+        // };
+
+        // var countryCodes = {
+        //     "India": "+91",
+        //     "USA": "+1",
+        //     "UK": "+44",
+        //     "Australia": "+61",
+        //     "Canada": "+1",
+        //     "France": "+33",
+        //     "Germany": "+49"
+        //     // Add more countries and their codes as needed
+        // };
+
+        // function populateOptions(selectElement, options) {
+        //     selectElement.innerHTML = "<option value='' disabled selected>Select an Option</option>";
+        //     for (let option of options) {
+        //         selectElement.innerHTML += "<option value='" + option + "'>" + option + "</option>";
+        //     }
+        // }
+
+        // function handleCountrySelection() {
+        //     const selectedCountry = document.getElementById("contact-form-country").value;
+        //     const contactFormState = document.getElementById("contact-form-state");
+        //     const contactFormCity = document.getElementById("contact-form-city");
+        //     const countryCode = document.getElementById("country-code");
+
+        //     if (selectedCountry == "" || !countryData[selectedCountry]) {
+        //         alert("Please select a valid country.");
+        //         document.getElementById("contact-form-country").focus();
+        //         return;
+        //     }
+
+        //     countryCode.innerHTML = countryCodes[selectedCountry];
+        //     populateOptions(contactFormState, Object.keys(countryData[selectedCountry]));
+        //     contactFormCity.innerHTML = "<option value='' disabled selected>Select a City</option>";
+        // }
+
+        // function handleStateSelection() {
+        //     const selectedCountry = document.getElementById("contact-form-country").value;
+        //     const selectedFormState = document.getElementById("contact-form-state").value;
+        //     const contactFormCity = document.getElementById("contact-form-city");
+
+        //     if (selectedCountry == "" || selectedFormState == "" || !countryData[selectedCountry][selectedFormState]) {
+        //         document.getElementById("contact-form-country").focus();
+        //         alert("Please select both country and state.");
+        //         return;
+        //     }
+
+        //     populateOptions(contactFormCity, countryData[selectedCountry][selectedFormState]);
+        // }
+
+        // function validateContactForm() {
+        //     let firstName = document.getElementById('first-name').value;
+        //     let lastName = document.getElementById('last-name').value;
+        //     let country = document.getElementById('contact-form-country').value;
+        //     let state = document.getElementById('contact-form-state').value;
+        //     let city = document.getElementById('contact-form-city').value;
+        //     let phoneno = document.getElementById('phone-no').value;
+        //     let address = document.getElementById('writeaddress').value;
+        //     let email = document.getElementById('email');
+
+        //     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        //     document.getElementById('contact-us-form').classList.add('was-validated');
+
+        //     if (firstName.trim() === '' || lastName.trim() === '' || country.trim() === '' || state.trim() === '' || city.trim() === '' || phoneno.trim() === '' || email.value.trim() === '') {
+        //         alert('Please fill all the Required Details');
+        //         return false;
+        //     }
+
+        //     if (!emailRegex.test(email.value)) {
+        //         alert('Please enter a valid email address');
+        //         email.focus();
+        //         return false;
+        //     }
+
+        //     if (address == null || address == "") {
+        //         address = "Not Available";
+        //     }
+
+        //     const cotact_us_obj = {
+        //         firstName,
+        //         lastName,
+        //         country,
+        //         phoneno,
+        //         state,
+        //         city,
+        //         email: email.value,
+        //         address
+        //     }
+        //     saveLocalStorage(cotact_us_obj);
+        //     return true;
+        // }
+
+
+        // function saveLocalStorage(cotact_us_obj) {
+        //     let localstorage_arr = JSON.parse(localStorage.getItem("contact-us-data"));
+        //     if (localstorage_arr != null && localstorage_arr.length > 0) {
+        //         localstorage_arr.push(cotact_us_obj);
+        //         localStorage.setItem("contact-us-data", JSON.stringify(localstorage_arr));
+        //     }
+        //     else {
+        //         let new_arr = [];
+        //         new_arr.push(cotact_us_obj);
+        //         localStorage.setItem("contact-us-data", JSON.stringify(new_arr));
+        //     }
+        //     alert("Data saved Successfully")
+        // }
+
+
+        document.getElementById("toastbtn").onclick = function () {
+            var toastElList = [].slice.call(document.querySelectorAll('#liveToast3'))
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl)
+            })
+            toastList.forEach(toast => toast.show())
+        }
+
+    </script>
+    <script src="./contact.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- firstname, lastname, email, phone. no, city, state, country, address, save, cancel -->

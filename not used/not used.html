@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+
+
+
+ // function loadDatainTable() {
+        //     main_table_body.innerHTML = "";
+        //     let txt = "";
+        //     if (localstorage_arr != null && localstorage_arr.length > 0) {
+        //         for (one_obj_index in localstorage_arr) {
+        //             txt += "<tr>";
+        //             let one_obj = localstorage_arr[one_obj_index];
+        //             for (let key in one_obj) {
+        //                 if (one_obj[key] == null || one_obj[key] == "") {
+        //                     txt += "<td>Not Available</td>";
+        //                 }
+        //                 else {
+        //                     txt += "<td>" + one_obj[key] + "</td>";
+        //                 }
+        //             }
+        //             txt += `<td><button type='button' class="edit-btn" onclick='handleEditObj(${one_obj_index})'><i class="fa-solid fa-pen-to-square"></i> Edit</button></td>`
+        //             txt += `<td><button type='button' class="delete-btn" onclick='handleDeleteObj(${one_obj_index})'><i class="fa-solid fa-trash"></i> Delete</button></td>`
+        //             txt += "</tr>";
+        //         }
+        //         main_table_body.innerHTML = txt;
+        //     }
+        // }
+
+
+
+
+    </script>
+    
+    <!-- get in touch css -->
+    <style>
+        .get-in-touch-section {
+            width: 100%;
+        }
+
+        .get-in-touch-bg-img-section {
+            /* width: 100%; */
+            height: 100%;
+            background: url('./Assets/get in touch bg.jpg') center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .get-in-touch-container {
+            backdrop-filter: grayscale(80%);
+            background-color: rgba(5, 25, 56, 0.78);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 30px;
+        }
+
+        .get-in-touch-container h1 {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .get-in-touch-container .get-in-touch-form-details {
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form {
+            width: 100%;
+            color: #fff;
+            /* row-gap: 10px; */
+        }
+
+        .get-in-touch-form-details .get-in-touch-form input,
+        .get-in-touch-form-details .get-in-touch-form select {
+            padding: 8px 12px;
+            /* border: none; */
+            /* outline: none; */
+        }
+
+        .get-in-touch-form-details .get-in-touch-form textarea {
+            width: 100%;
+            padding: 6px 12px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form button {
+            align-self: flex-end;
+            padding: 10px 30px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .send-btn {
+            background-color: #fff;
+            color: #5169d5;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .reset-btn {
+            color: #3d3d3d;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .view-btn {
+            color: #92761a;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .send-btn:hover {
+            background-color: #5165d5;
+            color: #fff;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .reset-btn:hover {
+            background-color: gray;
+            color: #fff;
+        }
+
+        .get-in-touch-form-details .get-in-touch-form .view-btn:hover {
+            background-color: #bd9a26;
+            color: #fff;
+        }
+
+
+        .modal-btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .modal-btns a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* .get-in-touch-form-details .get-in-touch-details {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    min-width: 280px;
+    gap: 30px;
+} */
+
+        /* .get-in-touch-details .get-in-touch-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.get-in-touch-details .get-in-touch-icons p {
+    width: 100%;
+    margin: 0;
+}
+
+.get-in-touch-details .get-in-touch-icons .icons-div {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.get-in-touch-details .get-in-touch-icons i {
+    font-size: 22px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0087ca;
+} */
+    </style>
+</body>
+
+</html>
